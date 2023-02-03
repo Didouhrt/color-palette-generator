@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Serif:wght@300;400&family=Playfair+Display&family=Poppins:wght@100;400;500;600&family=Roboto:wght@100;400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Poppins";
+  overflow: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+header input[type="number"] {
+  text-align: center;
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+  padding: 0.5rem;
+}
+header .btn {
+  background: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+header .btn:hover {
+  box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.colorcontainer {
+  min-height: 100vh;
+  display: flex;
+}
+.colorcontainer div {
+  flex: 1;
+  background: var(--i);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colorcontainer div p {
+  padding: 0 0.5rem;
+  transition: .3s ease;
+}
+.colorcontainer div p:hover {
+  background: rgb(255, 255, 255, 0.1);
+  cursor: pointer;
+  color: #fff;
+}
+.copied{
+    position: absolute;
+    bottom: -3rem;
+    background: #fff;
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    transform: translateX(-50%);
+    left: 50%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    transition: .3s ease;
+}
+.copied.active{
+    bottom: 1rem;
+}
